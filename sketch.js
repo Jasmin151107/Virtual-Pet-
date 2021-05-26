@@ -91,7 +91,7 @@ function feedDogs(){
   } else{
     foodObj.updateFoodStock(food_stock_val-1);
   }
-  foodObj.updateFoodStock(foodObj.getFoodStock()-1);
+ 
   database.ref('/').update({
     Food: foodObj.getFoodStock(),
     FeedTime:hour()
